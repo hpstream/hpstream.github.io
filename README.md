@@ -8,17 +8,16 @@
  - 黄鹏/男/1995
  - 本科/计算机系 
  - 工作年限：2年
- - 简书：[我的简书](https://www.jianshu.com/u/0e190d5b2e72) 
- - 技术博客：https://segmentfault.com/u/believe_dream/articles
- - Github：https://github.com/hpstream
  - 期望职位：web前端开发
  - 期望薪资：月薪12k~15k，特别喜欢的公司可例外
  - 期望城市：北京
+ - 简书：[我的简书](https://www.jianshu.com/u/0e190d5b2e72) 
+ - Github：https://github.com/hpstream
 
 ---            
 # 工作经历
 ## 安徽富驰信息技术有限公司 （ 2017.4-至今 ）
-### 类安指引 (http://36.7.159.17:8088/fd-court-guide/login)
+### [类安指引](http://36.7.159.17:8088/fd-court-guide/login)
 >项目简介：基于es大数据进行分析，获取海量数据，为司法部门公平公正建立系统，做到司法透明。
 
 >主要职责：类案指引，量刑辅助，个人中心。
