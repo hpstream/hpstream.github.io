@@ -14,6 +14,7 @@
  - 期望职位：web前端开发
  - 期望薪资：月薪12k~15k，特别喜欢的公司可例外
  - 期望城市：北京
+
 ---            
 # 工作经历
 ## 安徽富驰信息技术有限公司 （ 2017.4-至今 ）
@@ -31,6 +32,7 @@
 
 ### 其他项目
 根据公司设计的前端ui规范，使用scss开大出一组css样式。
+
 [css代码规范](https://hpstream.github.io/javascript-Design-pattern-and-code-specification/codeSpecification/css/index.html)
 
 [js代码规范](https://github.com/hpstream/javascript-Design-pattern-and-code-specification/blob/master/codeSpecification/js/1.js代码规范.md)
