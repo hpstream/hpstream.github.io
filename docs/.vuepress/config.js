@@ -4,5 +4,8 @@ module.exports = {
   head: [
     ['link', {rel: 'icon',href: '/img/logo.jpeg'}]
   ],
-  base:"/"
+  base:"/",
+  themeConfig:{
+    logo: "/img/logo.jpeg"
+  }
 }
