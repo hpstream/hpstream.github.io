@@ -21,6 +21,7 @@ body
   padding-left $sidebarWidth
 
 .navbar
+  display none
   position fixed
   z-index 20
   top 0
@@ -178,6 +179,17 @@ th, td
       top 0
     .custom-layout
       padding-top 0
+  min-height 100vh
+  background-image url('../../public/img/code.png')
+  background-size: contain;
+  background-position-y: 0;
+  animation: scroll 30s linear infinite;
+
+@keyframes scroll
+{
+    from {background-position-y: 0;}
+    to {background-position-y: 200%;}
+}
 
 
 @media (min-width: ($MQMobile + 1px))
