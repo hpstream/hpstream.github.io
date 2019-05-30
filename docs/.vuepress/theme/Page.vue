@@ -166,6 +166,9 @@ export default {
         path
       )
     }
+  },
+  mounted() {
+    console.log(this.$page.lastUpdated);
   }
 }
 
@@ -200,6 +203,11 @@ function find (page, items, offset) {
 @require './styles/wrapper.styl'
 
 .page
+  max-width: 960px;
+  min-height: 100vh;
+  background-color: #f5f5d5;
+  letter-spacing: -0.01em;
+  margin: 0px auto;
   padding-bottom 2rem
 
 .page-edit

@@ -4,6 +4,16 @@ export default ({
   router, // 当前应用的路由实例
   siteData // 站点元数据
 }) => {
+  
+  const {
+    themeConfig,
+    pages
+  } = siteData;
+  console.log(siteData);
+  //  Vue.use(router, {
+  //    themeConfig
+  //  })
+  // console.log(router);
   // ...做一些其他的应用级别的优化
   // console.log(siteData)
 }

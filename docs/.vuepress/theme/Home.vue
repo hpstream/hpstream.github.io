@@ -11,7 +11,7 @@
         v-if='data.motto'
         class='motto'
       >
-        <div class='mottotitle'>座右铭:</div>
+        <div class='mottotitle'>人生格言:</div>
         <div class="description">
           <p v-for='item of data.motto'>{{item.info}}</p>
         </div>
@@ -72,7 +72,7 @@ export default {
     }
   },
   mounted() {
-    console.log(this.$page.frontmatter);
+    // console.log(this.$page.frontmatter);
   }
 };
 </script>
@@ -85,7 +85,6 @@ export default {
   max-width: 960px;
   min-height: 100vh;
   background-color: #f5f5d5;
-  font-family: Georgia, serif;
   letter-spacing: -0.01em;
   margin: 0px auto;
 
