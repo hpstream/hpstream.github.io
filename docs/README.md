@@ -1,8 +1,5 @@
 ---
 home: true
-# heroImage: /img/logo.jpeg
-# actionText: 快速上手 →
-# actionLink: /zh/guide/
 motto:
 - info: 昨夜西风凋碧树，独上高楼，望尽天涯路。
 - info: 衣带渐宽终不悔，为伊消得人憔悴。

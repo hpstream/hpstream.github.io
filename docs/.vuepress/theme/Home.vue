@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home p2 border-box">
     <div class="hero">
       <img
         v-if="data.heroImage"
@@ -9,36 +9,30 @@
 
       <div
         v-if='data.motto'
-        class='motto'
+        class='left-align'
       >
-        <div class='mottotitle'>人生格言:</div>
-        <div class="description">
-          <p v-for='item of data.motto'>{{item.info}}</p>
+        <div class='h3'>人生格言:</div>
+        <div class="text">
+          <p v-for='item of data.motto' class='textIndent2 m0'>{{item.info}}</p>
         </div>
       </div>
 
-      <p
-        class="action"
-        v-if="data.actionText && data.actionLink"
-      >
-        <NavLink
-          class="action-button"
-          :item="actionLink"
-        />
-      </p>
     </div>
-
-    <div
-      class="features"
-      v-if="data.features && data.features.length"
-    >
-      <div
-        class="feature"
-        v-for="(feature, index) in data.features"
-        :key="index"
-      >
-        <h2>{{ feature.title }}</h2>
-        <p>{{ feature.details }}</p>
+    <div>
+      <div class='h3'>最新文章</div>
+      <div v-for="(item,key) of yeardirs">
+        <div class='mt2 h6 center'>{{key}}年</div>
+        <hr>
+        <ul>
+          <li v-for='it of item'>
+            <div>
+              <div @click='lookdeatails(it)' class='textlink pointer h6'>
+                <span>{{it.title}}</span>
+                <span class='textsecondary text'>({{it.datatext}})</span>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -63,16 +57,21 @@ export default {
     data() {
       return this.$page.frontmatter;
     },
-
     actionLink() {
       return {
         link: this.data.actionLink,
         text: this.data.actionText
       };
+    },
+    yeardirs() {
+      return this.$yeardirs;
     }
   },
-  mounted() {
-    // console.log(this.$page.frontmatter);
+  mounted() {},
+  methods: {
+    lookdeatails(item) {
+      this.$router.push(item.path);
+    }
   }
 };
 </script>
@@ -181,6 +180,7 @@ export default {
 
 @media (max-width: $MQMobile) {
   .home {
+     margin-top:3.6rem;
     .features {
       flex-direction: column;
     }
